@@ -7,37 +7,42 @@
 
 </head>
 <body>
-                                <div class="container" style="text-align: left">
-                                    <div>
-                                        <form th:action="@{/}" method="get">
-                                            Filter: <input id="txtSearch" type="search" name="keyword"/>
-                                            &nbsp;
-                                            <input type="submit" value="Search"/>
-                                            &nbsp;
-                                            <button onclick="document.getElementById('txtSearch').value = ''">Clear</button>
-                                        </form>
-                                    </div>
-                                    <table>
-                                        <thead>
-                                        <th><b>Name of a property</b></th>
-                                        <th><b>Name of a property owner</b></th>
-                                        <th><b>Start of reservation</b></th>
-                                        <th><b>End of reservation</b></th>
-                                        <th><b>Actions</b></th>
-                                        </thead>
-                                        <tbody>
-                                        <tr th:each="property : ${properties}">
-                                            <td th:text="${property.propertyName}"></td>
-                                            <td th:text="${property.landlordName}"></td>
-                                            <td th:text="${property.reservationStartDate}"></td>
-                                            <td th:text="${property.reservationEndDate}"></td>
-                                            <td>
-                                                <a th:href="|/property/change/${property.id}|">Zmień</a>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+<div style="text.align: center">
+    <h3><a href="/submit">Dodaj obiekt do bazy</a></h3> <br/> <br/>
+</div>
+<h2>Baza obiektów</h2>
+
+<div class="container" style="text-align: left">
+    <div>
+        <form th:action="@{/}" method="get">
+            Filter: <input id="txtSearch" type="search" name="keyword"/>
+            &nbsp;
+            <input type="submit" value="Search"/>
+            &nbsp;
+            <button onclick="document.getElementById('txtSearch').value = ''">Clear</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+        <th><b>Name of a property</b></th>
+        <th><b>Name of a property owner</b></th>
+        <th><b>Start of reservation</b></th>
+        <th><b>End of reservation</b></th>
+        <th><b>Actions</b></th>
+        </thead>
+        <tbody>
+        <tr th:each="property : ${properties}">
+            <td th:text="${property.propertyName}"></td>
+            <td th:text="${property.landlordName}"></td>
+            <td th:text="${property.reservationStartDate}"></td>
+            <td th:text="${property.reservationEndDate}"></td>
+            <td>
+                <a th:href="|/property/change/${property.id}|">Zmień</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
 </body>
 </html>

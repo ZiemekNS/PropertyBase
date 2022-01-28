@@ -36,7 +36,8 @@
             <div class="form-group row">
                 <label class="col-form-label col-4">Początek rezerwacji (dd-mm-yyyy)</label>
                 <div class="col-8">
-                    <input class="form-control" pattern="\d{2}-\d{2}-\d{4}" th:field="*{reservationStartDate}" required/>
+                    <input class="form-control" pattern="\d{2}-\d{2}-\d{4}" th:field="*{reservationStartDate}"
+                           required/>
                 </div>
             </div>
         </div>
@@ -45,11 +46,11 @@
             <div class="form-group row">
                 <label class="col-form-label col-4">Koniec rezerwacji (dd-mm-yyyy)</label>
                 <div class="col-8">
-                    <input class="form-control"pattern="\d{2}-\d{2}-\d{4}" th:field="*{reservationEndDate}" required/>
+                    <input class="form-control" pattern="\d{2}-\d{2}-\d{4}" th:field="*{reservationEndDate}" required/>
                 </div>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary">Wyślij ocenę</button>
+                <button type="submit" class="btn btn-primary">Dodaj obiekt</button>
                 <input type="reset">
             </div>
         </div>
