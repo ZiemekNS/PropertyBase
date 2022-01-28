@@ -1,4 +1,4 @@
-package com.example.beerRater;
+package com.example.propertyBase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

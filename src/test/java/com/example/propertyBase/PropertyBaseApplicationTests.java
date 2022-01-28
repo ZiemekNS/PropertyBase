@@ -1,10 +1,10 @@
-package com.example.beerRater;
+package com.example.propertyBase;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PropertyRaterApplicationTests {
+class PropertyBaseApplicationTests {
 
     @Test
     void contextLoads() {

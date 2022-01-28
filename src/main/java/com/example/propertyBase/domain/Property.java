@@ -1,4 +1,4 @@
-package com.example.beerRater.domain;
+package com.example.propertyBase.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

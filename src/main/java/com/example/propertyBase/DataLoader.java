@@ -1,7 +1,7 @@
-package com.example.beerRater;
+package com.example.propertyBase;
 
-import com.example.beerRater.domain.Property;
-import com.example.beerRater.repositories.PropertyRepository;
+import com.example.propertyBase.domain.Property;
+import com.example.propertyBase.repositories.PropertyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

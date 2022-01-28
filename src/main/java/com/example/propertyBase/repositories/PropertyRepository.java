@@ -1,7 +1,7 @@
-package com.example.beerRater.repositories;
+package com.example.propertyBase.repositories;
 
 import java.util.List;
-import com.example.beerRater.domain.Property;
+import com.example.propertyBase.domain.Property;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
