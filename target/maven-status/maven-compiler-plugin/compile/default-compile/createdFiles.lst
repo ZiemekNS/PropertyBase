@@ -1,0 +1,6 @@
+com\example\beerRater\BeerRaterApplication.class
+com\example\beerRater\repositories\BeerRepository.class
+com\example\beerRater\BeerService.class
+com\example\beerRater\DataLoader.class
+com\example\beerRater\domain\Beer.class
+com\example\beerRater\HomeController.class
